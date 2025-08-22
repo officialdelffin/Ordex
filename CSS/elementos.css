@@ -1,0 +1,22 @@
+
+/* Estilo do fundo de area principal */
+.class-main{
+
+
+    background-color: rgb(158, 158, 158);
+    padding: 50px;
+    margin: 50px;
+    border: 5px solid black
+
+}
+
+/* Estilos de botões */
+.class-botao-cinza{
+
+    background-color: gray;
+    color: white;
+
+}
+
+
+

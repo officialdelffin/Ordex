@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="CSS/textos.css">
+    <link rel="stylesheet" href="CSS/elementos.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ordex </title>
+
+
+
+</head>
+
+<body style="background-color: rgb(252, 229, 195);">
+
+    <!-- Topo do sistema -->
+    <header>
+
+        <h1 class="class-titulo"> Seja bem-vindo ao Ordex </h1>
+
+        <button> Nova Tarefa </button>
+        <button> Entrar </button>
+
+    </header>
+
+    <!-- Estrutura principal -->
+    <main>
+
+        <div>
+
+            <p>
+
+                Esse foi desenvolvido para gerenciar tarefas, desenvolvido para ajudar nas organização do dia a dia de forma simples, rapida e pratica
+
+            </p>
+
+        </div>
+
+        <div> <!-- Criação de tarefas -->
+
+            <form>
+
+                <h2 class="class-subtitulos"> Adicionar Tarefa </h2>
+
+                <!-- Input nome -->
+                <label for="nome_tarefa"> <b> Titulo </b> </label>
+                <input id="nome_tarefa" name="titulo" type="text" placeholder="Nome da tarefa">
+
+                <br><br>
+
+                <!-- Input descrição -->
+                <label for="descricao_tarefa"> <b> Descrição </b> </label>
+                <input id="descricao_tarefa" name="descricao" type="text" placeholder="Nome da tarefa">
+
+                <br><br>
+
+                <!-- Input select status -->
+                <label for="status_tarefa"> <b> Status </b> </label>
+                <select name="status" id="status_tarefa">
+
+                    <option selected disabled value=""> Selecione o Status </option>
+                    <option value="pendente"> Pendente </option>
+                    <option value="andamento"> Em andamento </option>
+                    <option value="concluida"> Concluida </option>
+
+                </select>
+
+                <br><br>
+
+                <!-- Input data vencimento -->
+                <label for="data_tarefa"> <b> Data de Vencimento </b> </label>
+                <input id="data_tarefa" name="data-vencimento" type="date" min="2025-01-01">
+
+                <br><br>
+
+                <!-- Input salvar tarefa -->
+                <input type="submit" value="Salvar Tarefa">
+
+            </form>
+
+        </div>
+
+        <div> <!-- Vizualização de tarefas -->
+
+            <h2 class="class-subtitulos"> Lita de tarefas </h2>
+
+            <!-- Sistema de filtragem -->
+            <form>
+
+                <label for="filtragem_tarefa"> Filtrar por status </label>
+                <select name="filtro" id="filtragem_tarefa">
+
+                    <option selected disabled value="todas"> Todas </option>
+                    <option value="concluida">Concluida</option>
+                    <option value="pendente">Pendente</option>
+                    <option value="andamento">Em andamento</option>
+
+                </select>
+
+                <input type="submit" value="Aplicar">
+
+            </form>
+
+            <br><br>
+
+            <!-- Tabela de exibição -->
+            <table width="60%" border="1">
+                
+                <tr> <!-- Nome das colunas -->
+
+                    <th> Titulo </th>
+                    <th> Status </th>
+                    <th> Data de entrega </th>
+
+                </tr>
+
+                <!-- Dados das colunas -->
+                <tr>
+
+                    <td> Nome </td>
+                    <td> Nenhum </td>
+                    <td> Sem Data </td>
+
+                </tr>
+
+                <tr>
+
+                    <td> Nome </td>
+                    <td> Nenhum </td>
+                    <td> Sem Data </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
